@@ -14,15 +14,6 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
     }
 
-    public void frutas(View view) {
-        Intent uno= new Intent (this,frutas.class);
-        startActivity(uno);
-    }
-
-    public void verduras(View view) {
-        Intent uno= new Intent (this,verduras.class);
-        startActivity(uno);
-    }
 
 
     }
