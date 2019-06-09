@@ -10,9 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".colores"></activity>
-        <activity android:name=".MainActivity" />
+        <activity android:name=".vocales" />
         <activity android:name=".menu" />
-        <activity android:name=".vocales">
+        <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

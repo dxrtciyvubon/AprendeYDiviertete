@@ -30,7 +30,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             app:srcCompat="@drawable/a"
-            android:onClick="playa"/>
+            android:onClick="playa"
+               android:contentDescription="TODO" />
 
 
 
@@ -39,7 +40,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 app:srcCompat="@drawable/e"
-                android:onClick="playe"/>
+                android:onClick="playe"
+                android:contentDescription="TODO" />
 
             <ImageButton
                 android:id="@+id/i"

@@ -36,8 +36,8 @@ public class colores extends AppCompatActivity {
     {
         visor.setImageResource(R.drawable.siete);
     }
-    public  void play4 (View view) { visor.setImageResource(R.drawable.roJo); }
-    public  void play5 (View view) { visor.setImageResource(R.drawable.roSa); }
+    public  void play4 (View view) { visor.setImageResource(R.drawable.rojof); }
+    public  void play5 (View view) { visor.setImageResource(R.drawable.rossa); }
     public  void play6 (View view)
     {
         visor.setImageResource(R.drawable.seis);
