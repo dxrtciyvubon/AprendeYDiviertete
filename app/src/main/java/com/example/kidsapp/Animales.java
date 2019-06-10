@@ -2,12 +2,14 @@ package com.example.kidsapp;
 
 import android.media.MediaPlayer;
 import android.os.Bundle;
+import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 
 public class Animales extends AppCompatActivity {
+
 
     
     private ImageView fondo;
@@ -19,67 +21,68 @@ public class Animales extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_animales);
+        setUpActionBar();
 
             fondo = (ImageView) findViewById(R.id.img);
             btn1 = (ImageButton) findViewById(R.id.boton1);
-            mp = MediaPlayer.create(this, R.raw.grabacion);
+            mp = MediaPlayer.create(this, R.raw.caballo);
 
             btn2 = (ImageButton) findViewById(R.id.boton10);
-            son1 = MediaPlayer.create(this, R.raw.grabacion);
+            son1 = MediaPlayer.create(this, R.raw.gato);
 
             btn3 = (ImageButton) findViewById(R.id.boton3);
-            son2 = MediaPlayer.create(this, R.raw.grabacion);
+            son2 = MediaPlayer.create(this, R.raw.cochino);
 
             btn4 = (ImageButton) findViewById(R.id.boton5);
-            son3 = MediaPlayer.create(this, R.raw.grabacion);
+            son3 = MediaPlayer.create(this, R.raw.vaca);
 
             btn5 = (ImageButton) findViewById(R.id.boton7);
-            son4 = MediaPlayer.create(this, R.raw.grabacion);
+            son4 = MediaPlayer.create(this, R.raw.borrego);
 
             btn6 = (ImageButton) findViewById(R.id.boton9);
-            son5 = MediaPlayer.create(this, R.raw.grabacion);
+            son5 = MediaPlayer.create(this, R.raw.loro);
 
             btn7 = (ImageButton) findViewById(R.id.boton2);
-            son6 = MediaPlayer.create(this, R.raw.grabacion);
+            son6 = MediaPlayer.create(this, R.raw.pollito);
 
             btn8 = (ImageButton) findViewById(R.id.boton8);
-            son7 = MediaPlayer.create(this, R.raw.grabacion);
+            son7 = MediaPlayer.create(this, R.raw.tortuga);
 
             btn9 = (ImageButton) findViewById(R.id.boton4);
-            son8 = MediaPlayer.create(this, R.raw.grabacion);
+            son8 = MediaPlayer.create(this, R.raw.pato);
 
             btn10 = (ImageButton) findViewById(R.id.boton16);
-            son9 = MediaPlayer.create(this, R.raw.grabacion);
+            son9 = MediaPlayer.create(this, R.raw.osopanda);
 
             btn11 = (ImageButton) findViewById(R.id.boton6);
-            son10 = MediaPlayer.create(this, R.raw.grabacion);
+            son10 = MediaPlayer.create(this, R.raw.perro);
 
             btn12 = (ImageButton) findViewById(R.id.boton14);
-            son11 = MediaPlayer.create(this, R.raw.grabacion);
+            son11 = MediaPlayer.create(this, R.raw.oso);
 
             btn13 = (ImageButton) findViewById(R.id.boton15);
-            son12 = MediaPlayer.create(this, R.raw.grabacion);
+            son12 = MediaPlayer.create(this, R.raw.leon);
 
           btn14 = (ImageButton) findViewById(R.id.boton17);
-            son13 = MediaPlayer.create(this, R.raw.grabacion);
+            son13 = MediaPlayer.create(this, R.raw.serpiente);
 
             btn15 = (ImageButton) findViewById(R.id.boton18);
-            son14 = MediaPlayer.create(this, R.raw.grabacion);
+            son14 = MediaPlayer.create(this, R.raw.mono);
 
             btn16 = (ImageButton) findViewById(R.id.boton20);
-            son15 = MediaPlayer.create(this, R.raw.grabacion);
+            son15 = MediaPlayer.create(this, R.raw.jirafa);
 
             btn17 = (ImageButton) findViewById(R.id.boton19);
-            son16 = MediaPlayer.create(this, R.raw.grabacion);
+            son16 = MediaPlayer.create(this, R.raw.tigre);
 
             btn18 = (ImageButton) findViewById(R.id.boton13);
-            son17 = MediaPlayer.create(this, R.raw.grabacion);
+            son17 = MediaPlayer.create(this, R.raw.ardilla);
 
             btn19 = (ImageButton) findViewById(R.id.boton12);
-            son18 = MediaPlayer.create(this, R.raw.grabacion);
+            son18 = MediaPlayer.create(this, R.raw.zorro);
 
             btn20 = (ImageButton) findViewById(R.id.boton11);
-            son19 = MediaPlayer.create(this, R.raw.grabacion);
+            son19 = MediaPlayer.create(this, R.raw.cocodrilo);
 
 
             btn1.setOnClickListener(new View.OnClickListener() {
@@ -246,5 +249,12 @@ public class Animales extends AppCompatActivity {
         fondo.setImageResource(R.drawable.tigre);
         fondo.setImageResource(R.drawable.ardilla);
         fondo.setImageResource(R.drawable.zorro);
+        }
+        private void setUpActionBar(){
+            ActionBar actionBar= getSupportActionBar();
+            if(actionBar !=null){
+                actionBar.setDisplayHomeAsUpEnabled(true);
+                actionBar.setTitle("Animales");
+            }
         }
     }

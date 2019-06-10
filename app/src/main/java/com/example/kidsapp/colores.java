@@ -1,6 +1,7 @@
 package com.example.kidsapp;
 
 import android.media.MediaPlayer;
+import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -28,18 +29,19 @@ public class colores extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_colores);
+        setUpActionBar();
 
-        co1= MediaPlayer.create(this,R.raw.vocal1);
-        co2= MediaPlayer.create(this,R.raw.vocal1);
-        co3= MediaPlayer.create(this,R.raw.vocal1);
-        co4= MediaPlayer.create(this,R.raw.vocal1);
-        co5= MediaPlayer.create(this,R.raw.vocal1);
-        co6= MediaPlayer.create(this,R.raw.vocal1);
-        co7= MediaPlayer.create(this,R.raw.vocal1);
-        co8= MediaPlayer.create(this,R.raw.vocal1);
-        co9= MediaPlayer.create(this,R.raw.vocal1);
-        comm= MediaPlayer.create(this,R.raw.vocal1);
-        copp= MediaPlayer.create(this,R.raw.vocal1);
+        co1= MediaPlayer.create(this,R.raw.amarillo);
+        co2= MediaPlayer.create(this,R.raw.azul);
+        co3= MediaPlayer.create(this,R.raw.blanco);
+        co4= MediaPlayer.create(this,R.raw.rojo);
+        co5= MediaPlayer.create(this,R.raw.rosado);
+        co6= MediaPlayer.create(this,R.raw.morado);
+        co7= MediaPlayer.create(this,R.raw.verde);
+        co8= MediaPlayer.create(this,R.raw.cafe);
+        co9= MediaPlayer.create(this,R.raw.gris);
+        comm= MediaPlayer.create(this,R.raw.anaranjado);
+        copp= MediaPlayer.create(this,R.raw.negro);
 
         visor=(ImageView) findViewById(R.id.visor);
         am=(ImageButton)findViewById(R.id.amarillo);
@@ -92,6 +94,13 @@ public class colores extends AppCompatActivity {
     }
     public  void play11(View view){visor.setImageResource(R.drawable.negro);
         copp.start();
+    }
+    private void setUpActionBar(){
+        ActionBar actionBar= getSupportActionBar();
+        if(actionBar !=null){
+            actionBar.setDisplayHomeAsUpEnabled(true);
+            actionBar.setTitle("Colores");
+        }
     }
 }
 

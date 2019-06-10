@@ -2,6 +2,7 @@
 package com.example.kidsapp;
 
 import android.media.MediaPlayer;
+import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -19,6 +20,7 @@ public class verduras extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_verduras);
+        setUpActionBar();
 
 
         fondo = (ImageView) findViewById(R.id.fondo);
@@ -36,19 +38,19 @@ public class verduras extends AppCompatActivity {
         doce = (ImageButton) findViewById(R.id.doce);
         trece = (ImageButton) findViewById(R.id.trece);
 
-        sonidouno = MediaPlayer.create(this, R.raw.manzana);
-        sonidodos = MediaPlayer.create(this, R.raw.manzana);
-        sonidotres = MediaPlayer.create(this, R.raw.manzana);
-        sonidocuatro = MediaPlayer.create(this, R.raw.manzana);
-        sonidocinco = MediaPlayer.create(this, R.raw.manzana);
-        sonidoseis = MediaPlayer.create(this, R.raw.manzana);
-        sonidosiete = MediaPlayer.create(this, R.raw.manzana);
-        sonidoocho = MediaPlayer.create(this, R.raw.manzana);
-        sonidonueve = MediaPlayer.create(this, R.raw.manzana);
-        sonidodiez = MediaPlayer.create(this, R.raw.manzana);
-        sonidoonce = MediaPlayer.create(this, R.raw.manzana);
-        sonidodoce = MediaPlayer.create(this, R.raw.manzana);
-        sonidotrece = MediaPlayer.create(this, R.raw.manzana);
+        sonidouno = MediaPlayer.create(this, R.raw.brocoli);
+        sonidodos = MediaPlayer.create(this, R.raw.cebolla);
+        sonidotres = MediaPlayer.create(this, R.raw.apio);
+        sonidocuatro = MediaPlayer.create(this, R.raw.chanpinion);
+        sonidocinco = MediaPlayer.create(this, R.raw.repollo);
+        sonidoseis = MediaPlayer.create(this, R.raw.chicharo);
+        sonidosiete = MediaPlayer.create(this, R.raw.lechuga);
+        sonidoocho = MediaPlayer.create(this, R.raw.elote);
+        sonidonueve = MediaPlayer.create(this, R.raw.papa);
+        sonidodiez = MediaPlayer.create(this, R.raw.pepino);
+        sonidoonce = MediaPlayer.create(this, R.raw.pimiento);
+        sonidodoce = MediaPlayer.create(this, R.raw.rabano);
+        sonidotrece = MediaPlayer.create(this, R.raw.tomate);
 
         uno.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -60,21 +62,21 @@ public class verduras extends AppCompatActivity {
         dos.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                sonidouno.start();
-                fondo.setImageResource(R.drawable.cebolla2);
+                sonidodos.start();
+                fondo.setImageResource(R.drawable.apio);
             }
         });
         tres.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                sonidouno.start();
+                sonidotres.start();
                 fondo.setImageResource(R.drawable.apio);
             }
         });
         cuatro.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                sonidouno.start();
+                sonidocuatro.start();
                 fondo.setImageResource(R.drawable.champinion);
             }
         });
@@ -146,7 +148,7 @@ public class verduras extends AppCompatActivity {
 
     public void click(View view) {
         fondo.setImageResource(R.drawable.brocoli);
-        fondo.setImageResource(R.drawable.cebolla2);
+        fondo.setImageResource(R.drawable.apio);
         fondo.setImageResource(R.drawable.apio);
         fondo.setImageResource(R.drawable.champinion);
         fondo.setImageResource(R.drawable.repollo);
@@ -160,5 +162,12 @@ public class verduras extends AppCompatActivity {
         fondo.setImageResource(R.drawable.tomate);
 
 
+    }
+    private void setUpActionBar(){
+        ActionBar actionBar= getSupportActionBar();
+        if(actionBar !=null){
+            actionBar.setDisplayHomeAsUpEnabled(true);
+            actionBar.setTitle("Verduras");
+        }
     }
 }

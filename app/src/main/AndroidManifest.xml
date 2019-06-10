@@ -9,14 +9,16 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".vocales"></activity>
-        <activity android:name=".colores" />
-        <activity android:name=".verduras" />
-        <activity android:name=".frutas" />
-        <activity android:name=".Splash" />
-        <activity android:name=".MainActivity" />
-        <activity android:name=".menu" />
-        <activity android:name=".abcdario">
+        <activity android:name=".vocales" android:parentActivityName=".PantallaPrincipal"></activity>
+        <activity android:name=".colores" android:parentActivityName=".PantallaPrincipal"></activity>
+        <activity android:name=".verduras" android:parentActivityName=".PantallaPrincipal"></activity>
+        <activity android:name=".frutas" android:parentActivityName=".PantallaPrincipal"></activity>
+        <activity android:name=".abcdario" android:parentActivityName=".PantallaPrincipal"></activity>
+        <activity android:name=".menu" ></activity>
+        <activity android:name=".numeros" android:parentActivityName=".PantallaPrincipal"></activity>
+        <activity android:name=".PantallaPrincipal"></activity>
+        <activity android:name=".Animales" android:parentActivityName=".PantallaPrincipal"></activity>
+        <activity android:name=".MainActivity" android:theme="@style/Theme.AppCompat.Light.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

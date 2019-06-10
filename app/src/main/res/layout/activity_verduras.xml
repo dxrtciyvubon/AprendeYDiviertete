@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/fondo2"
     tools:context=".verduras">
 
     <ImageButton
@@ -44,7 +45,7 @@
         android:layout_marginRight="154dp"
         android:layout_marginBottom="598dp"
         android:scaleType="centerCrop"
-        android:src="@drawable/cebolla2" />
+        android:src="@drawable/cebolla" />
 
     <ImageButton
         android:id="@+id/tres"
@@ -179,14 +180,14 @@
         android:layout_marginEnd="302dp"
         android:layout_marginRight="302dp"
         android:layout_marginBottom="116dp"
-        android:scaleType="centerCrop"
+        android:scaleType="fitCenter"
         android:src="@drawable/papa" />
 
     <ImageButton
         android:id="@+id/diez"
         style="@style/botonimagen"
-        android:layout_width="98dp"
-        android:layout_height="104dp"
+        android:layout_width="99dp"
+        android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
@@ -196,8 +197,8 @@
         android:layout_marginStart="15dp"
         android:layout_marginLeft="15dp"
         android:layout_marginTop="384dp"
-        android:layout_marginEnd="298dp"
-        android:layout_marginRight="298dp"
+        android:layout_marginEnd="297dp"
+        android:layout_marginRight="297dp"
         android:layout_marginBottom="243dp"
         android:scaleType="centerCrop"
         android:src="@drawable/pepino" />
@@ -219,7 +220,7 @@
         android:layout_marginEnd="298dp"
         android:layout_marginRight="298dp"
         android:layout_marginBottom="358dp"
-        android:scaleType="centerCrop"
+        android:scaleType="fitCenter"
         android:src="@drawable/pimiento" />
 
     <ImageButton

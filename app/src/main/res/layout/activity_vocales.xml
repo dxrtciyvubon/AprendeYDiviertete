@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/fondo2"
     tools:context=".vocales">
 
     <ScrollView
@@ -26,41 +27,46 @@
 
             <ImageButton
                 android:id="@+id/a"
+                style="@style/abc"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                app:srcCompat="@drawable/vocala"
+                android:contentDescription="TODO"
                 android:onClick="playa"
-                android:contentDescription="TODO" />
+                app:srcCompat="@drawable/a" />
 
 
 
             <ImageButton
                 android:id="@+id/e"
+                style="@style/abc"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                app:srcCompat="@drawable/vocale"
+                app:srcCompat="@drawable/e"
                 android:onClick="playe"
                 android:contentDescription="TODO" />
 
             <ImageButton
                 android:id="@+id/i"
+                style="@style/abc"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                app:srcCompat="@drawable/vocali"
+                app:srcCompat="@drawable/i"
                 android:onClick="playi" />
 
             <ImageButton
                 android:id="@+id/o"
+                style="@style/abc"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                app:srcCompat="@drawable/vocalo"
+                app:srcCompat="@drawable/o"
                 android:onClick="playo"/>
 
             <ImageButton
                 android:id="@+id/u"
+                style="@style/abc"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                app:srcCompat="@drawable/vocalu"
+                app:srcCompat="@drawable/u"
                 android:onClick="playu"/>
 
 

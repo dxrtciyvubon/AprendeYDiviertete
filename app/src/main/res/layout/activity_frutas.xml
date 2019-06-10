@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/fondo2"
     tools:context=".frutas">
 
     <ImageButton
@@ -100,7 +101,7 @@
         android:layout_marginEnd="16dp"
         android:layout_marginRight="16dp"
         android:layout_marginBottom="354dp"
-        android:scaleType="centerCrop"
+        android:scaleType="fitCenter"
         android:src="@drawable/limon" />
 
     <ImageButton
@@ -176,10 +177,10 @@
         android:layout_alignParentBottom="true"
         android:layout_marginStart="11dp"
         android:layout_marginLeft="11dp"
-        android:layout_marginTop="511dp"
+        android:layout_marginTop="515dp"
         android:layout_marginEnd="286dp"
         android:layout_marginRight="286dp"
-        android:layout_marginBottom="116dp"
+        android:layout_marginBottom="112dp"
         android:scaleType="centerCrop"
         android:src="@drawable/pinia" />
 

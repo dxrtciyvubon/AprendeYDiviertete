@@ -1,6 +1,7 @@
 package com.example.kidsapp;
 
 import android.media.MediaPlayer;
+import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -21,6 +22,7 @@ public class vocales extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_vocales);
+        setUpActionBar();
         visor=(ImageView) findViewById(R.id.visor);
         a1=(ImageButton)findViewById(R.id.a);
         e2=(ImageButton)findViewById(R.id.e);
@@ -29,11 +31,11 @@ public class vocales extends AppCompatActivity {
         u5=(ImageButton)findViewById(R.id.u);
 
 
-        a= MediaPlayer.create(this,R.raw.vocal1);
-        e= MediaPlayer.create(this,R.raw.vocal1);
-        i= MediaPlayer.create(this,R.raw.vocal1);
-        o= MediaPlayer.create(this,R.raw.vocal1);
-        u= MediaPlayer.create(this,R.raw.vocal1);
+        a= MediaPlayer.create(this,R.raw.letraa);
+        e= MediaPlayer.create(this,R.raw.letrae);
+        i= MediaPlayer.create(this,R.raw.letrai);
+        o= MediaPlayer.create(this,R.raw.letrao);
+        u= MediaPlayer.create(this,R.raw.letrau);
 
 
 
@@ -67,6 +69,13 @@ public class vocales extends AppCompatActivity {
 
         u.start();
         visor.setImageResource(R.drawable.vocalu);
+    }
+    private void setUpActionBar(){
+        ActionBar actionBar= getSupportActionBar();
+        if(actionBar !=null){
+            actionBar.setDisplayHomeAsUpEnabled(true);
+            actionBar.setTitle("Vocales");
+        }
     }
 
 

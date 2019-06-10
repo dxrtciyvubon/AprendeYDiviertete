@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/fondo2"
     tools:context=".colores">
 
     <ScrollView
@@ -27,10 +28,12 @@
             <ImageButton
 
                 android:id="@+id/amarillo"
+
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                app:srcCompat="@drawable/amarillo"
-                android:onClick="play1"/>
+                android:onClick="play1"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/amarillo" />
 
             <ImageButton
                 android:id="@+id/azul"
@@ -92,7 +95,7 @@
                 android:id="@+id/naranja"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                app:srcCompat="@drawable/naranja"
+                app:srcCompat="@drawable/anaranjado"
                 android:onClick="play10"/>
 
             <ImageButton
