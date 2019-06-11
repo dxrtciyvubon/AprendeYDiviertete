@@ -37,7 +37,7 @@ public class frutas extends AppCompatActivity {
         doce = (ImageButton) findViewById(R.id.doce);
         trece = (ImageButton) findViewById(R.id.trece);
 
-        sonidouno = MediaPlayer.create(this, R.raw.kiwi);
+        sonidouno = MediaPlayer.create(this, R.raw.manzana);
         sonidodos = MediaPlayer.create(this, R.raw.kiwi);
         sonidotres = MediaPlayer.create(this, R.raw.fresa);
         sonidocuatro = MediaPlayer.create(this, R.raw.sandia);

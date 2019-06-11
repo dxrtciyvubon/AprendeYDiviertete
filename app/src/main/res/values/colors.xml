@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimary">#ff3d00</color>
     <color name="colorPrimaryDark">#00574B</color>
     <color name="colorAccent">#D81B60</color>
     <color name="boton2">#b084f4</color>
-    <color name="boton3">#ff6090</color>
+    <color name="boton3">#fff</color>
     <color name="boton4">#58ACFA</color>
     <color name="boton5">#52c7b8</color>
     <color name="boton6">#ffa040</color>

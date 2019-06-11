@@ -45,30 +45,30 @@ public class vocales extends AppCompatActivity {
     public  void playa (View view)
     {
         a.start();
-        visor.setImageResource(R.drawable.vocala);
+        visor.setImageResource(R.drawable.a);
     }
 
 
     public  void playe (View view){
         e.start();
-        visor.setImageResource(R.drawable.vocale);
+        visor.setImageResource(R.drawable.e);
     }
 
 
     public  void playi (View view){
         i.start();
-        visor.setImageResource(R.drawable.vocali);
+        visor.setImageResource(R.drawable.i);
     }
 
     public  void playo (View view){
 
         o.start();
-        visor.setImageResource(R.drawable.vocalo);
+        visor.setImageResource(R.drawable.o);
     }
     public  void playu (View view){
 
         u.start();
-        visor.setImageResource(R.drawable.vocalu);
+        visor.setImageResource(R.drawable.u);
     }
     private void setUpActionBar(){
         ActionBar actionBar= getSupportActionBar();

@@ -63,7 +63,7 @@ public class verduras extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 sonidodos.start();
-                fondo.setImageResource(R.drawable.apio);
+                fondo.setImageResource(R.drawable.cebolla);
             }
         });
         tres.setOnClickListener(new View.OnClickListener() {

@@ -67,7 +67,7 @@ public class colores extends AppCompatActivity {
         co3.start();
     }
     public  void play4 (View view) { visor.setImageResource(R.drawable.rojof);co4.start(); }
-    public  void play5 (View view) { visor.setImageResource(R.drawable.rossa); co5.start(); }
+    public  void play5 (View view) { visor.setImageResource(R.drawable.brosado); co5.start(); }
     public  void play6 (View view)
     {
         visor.setImageResource(R.drawable.seis);
@@ -92,7 +92,7 @@ public class colores extends AppCompatActivity {
         visor.setImageResource(R.drawable.cinco);
         comm.start();
     }
-    public  void play11(View view){visor.setImageResource(R.drawable.negro);
+    public  void play11(View view){visor.setImageResource(R.drawable.once);
         copp.start();
     }
     private void setUpActionBar(){

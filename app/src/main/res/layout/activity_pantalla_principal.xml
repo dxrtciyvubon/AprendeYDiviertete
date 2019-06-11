@@ -10,7 +10,7 @@
 
     <ImageButton
         android:id="@+id/boton1"
-        style="@style/boton1"
+        style="@style/boton3"
         android:layout_width="121dp"
         android:layout_height="105dp"
         android:layout_marginStart="56dp"
@@ -23,35 +23,35 @@
 
     <ImageButton
         android:id="@+id/boton2"
-        style="@style/boton2"
+        style="@style/boton3"
         android:layout_width="115dp"
         android:layout_height="110dp"
         android:layout_marginStart="56dp"
         android:layout_marginLeft="56dp"
-        android:layout_marginTop="56dp"
+        android:layout_marginTop="64dp"
         android:onClick="vocales"
         android:scaleType="fitCenter"
         android:src="@drawable/vocales1"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <ImageButton
         android:id="@+id/boton3"
         style="@style/boton3"
         android:layout_width="118dp"
         android:layout_height="105dp"
-        android:layout_marginTop="60dp"
-        android:layout_marginEnd="52dp"
-        android:layout_marginRight="52dp"
+        android:layout_marginTop="64dp"
+        android:layout_marginEnd="48dp"
+        android:layout_marginRight="48dp"
         android:onClick="colores"
         android:scaleType="fitCenter"
         android:src="@drawable/coloresss"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <ImageButton
         android:id="@+id/boton4"
-        style="@style/boton4"
+        style="@style/boton3"
         android:layout_width="117dp"
         android:layout_height="111dp"
         android:layout_marginTop="56dp"
@@ -65,7 +65,7 @@
 
     <ImageButton
         android:id="@+id/boton5"
-        style="@style/boton5"
+        style="@style/boton3"
         android:layout_width="119dp"
         android:layout_height="103dp"
         android:layout_marginStart="52dp"
@@ -79,7 +79,7 @@
 
     <ImageButton
         android:id="@+id/boton6"
-        style="@style/boton6"
+        style="@style/boton3"
         android:layout_width="114dp"
         android:layout_height="107dp"
         android:layout_marginTop="40dp"
@@ -93,25 +93,9 @@
         />
 
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="315dp"
-        android:layout_height="41dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginRight="8dp"
-        android:text="Aprende Y Diviértete"
-        android:textColor="@color/colorPrimaryDark"
-        android:textSize="24sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
     <ImageButton
         android:id="@+id/boton7"
-        style="@style/boton8"
+        style="@style/boton3"
         android:layout_width="111dp"
         android:layout_height="104dp"
         android:layout_marginStart="148dp"
